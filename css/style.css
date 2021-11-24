@@ -6,6 +6,7 @@
   --whitecolor: rgba(245, 244, 250);
   --whitetext: rgba(255, 255, 255, 1);
   --whitesix: rgba(255, 255, 255, 0.6);
+  --colortextform:rgba(117, 117, 117, 1);
   --colorofborders: rgba(238, 238, 238, 1);
   --colorofborderteam: #ffffff;
   --bckgrclteam: rgba(245, 244, 250, 1);
@@ -15,6 +16,8 @@
   --colorlogoitem: #fff;
   --bckglisteage: rgb(245, 244, 250);
   --bordedclients:rgba(175, 177, 184, 1);
+  --bordersubscribe:rgba(255, 255, 255, 0.3);
+  --bcgsubscribe:#2F303A;
   --bordercclientshover:rgba(33, 150, 243, 1);
   --colorsocialbg:rgba(255, 255, 255,0.1 );
   --colorbggradient:rgba(47, 48, 58, 0.4);
@@ -24,6 +27,8 @@
   --bckgrwhbenefits:rgba(47, 48, 58, 0.8);
   --borderclose:rgba(0, 0, 0, 0.1);
   --bckgrmodal:rgba(0, 0, 0, 0.2);
+  
+
   /* shadowvolor */
   --shadow1:rgba(0, 0, 0, 0.1);
   --shadow2:rgba(0, 0, 0, 0.08);
@@ -32,6 +37,7 @@
   --shadow5:rgba(0, 0, 0, 0.2);
   --shadow6: rgba(0, 0, 0, 0.06);
   --shadow7: rgba(0, 0, 0, 0.16);
+  --shadow8:rgba(0, 0, 0, 0.15);
   /* grid setup */
   --item: 2;
   --item2: 2;
@@ -781,4 +787,133 @@ color: var(--whitetext);
   background-color:var(--whitetext);
   cursor: pointer;
   border: 1px solid var(--borderclose);
+}
+.subscribe-button
+{
+  display:inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bluecolor);
+  color: var(--whitetext);
+  font-size: 16px;
+  cursor: pointer;
+  border: 0cm;
+  border-radius: 10px;
+  height: 50px;
+  width: 200px;
+  margin-left: 12px;
+}
+.emailinput
+{
+width: 358px;
+height: 50px; 
+background-color: var(--bcgsubscribe);
+border: 1px solid var(--bordersubscribe);
+box-sizing: border-box;
+filter: drop-shadow(0px 4px 4px var(--shadow8));
+border-radius: 4px;
+position: relative;
+color:var(--whitecolor);
+padding-left: 16px;
+}
+.subscribep
+{
+font-family: "Roboto";
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 1,14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--whitetext);
+margin-bottom: 20px;
+}
+.subscribe
+{
+  margin-left: 93px;
+}
+.emailinput::placeholder
+{
+  font-family: "Roboto";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 1,25;
+letter-spacing: 0.03em;
+text-align: left;
+
+}
+.blocktext
+{
+  resize: none;
+}
+.modaldiv
+{
+  margin-left: 40px;
+  margin-right: 40px; 
+}
+.inputmodal
+{
+  display: block;
+  height: 40px;
+  width: 448px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.feedback
+{
+  width: 448px;
+  height: 120px;
+  resize: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.modalContent
+{
+  margin-top: 40px;
+  text-align: center;
+  margin-bottom: 12px;
+}
+.rows
+{
+  margin-bottom: 10px;
+}
+.rows:last-child
+{
+  margin-bottom: 20px;
+}
+.button-send
+{
+  
+  background-color: var(--bluecolor);
+  color: var(--whitetext);
+  font-size: 16px;
+  cursor: pointer;
+  border: 0cm;
+  border-radius: 10px;
+  height: 50px;
+  width: 200px;
+  margin-left: 125px;
+}
+.accept
+{
+  margin-bottom: 30px;
+  text-align: center;
+}
+.label
+{
+font-family: 'Roboto';
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 1.16;
+letter-spacing: 0.01em;
+text-align: left;
+color: var(--colortextform);
+}
+.feedback
+{
+  padding: 12px 16px;
 }

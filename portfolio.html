@@ -265,63 +265,98 @@
         </div>
       </section>
     </main>
-    <!--подвал-->
-    <footer class="basment">
+     <!--подвал-->
+     <footer class="basment">
       <div class="container connect">
-        <div class="connect-street">
-          <a href="index.html" class="emblema-basment"
-            ><span class="web-basment">Web</span>Studio</a
-          >
-          <address class="letter">
-            <p class="street">г. Киев, пр-т Леси Украинки, 26</p>
-            <ul class="list-basment">
-              <li>
-                <a href="mailto:info@example.com" class="contacts-basment"
-                  >info@example.com</a
-                >
+          <div class="connect-street">
+            <a href="index.html" class="emblema-basment"
+              ><span class="web-basment">Web</span>Studio</a
+            >
+            <address class="letter">
+              <p class="street">г. Киев, пр-т Леси Украинки, 26</p>
+              <ul class="list-basment">
+                <li>
+                  <a href="mailto:info@example.com" class="contacts-basment"
+                    >info@example.com</a
+                  >
+                </li>
+                <li>
+                  <a href="tel:+380991111111" class="contacts-basment"
+                    >+38 099 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="div-links">
+            <h2 class="connect-heading">присоединяйтесь</h2>
+            <ul class="connect-links">
+              <li class="connect-links-items">
+                <a href="insta.com" class="links-items">
+                  <svg class="svg-basement" width="40" height="40">
+                    <use
+                      href="./images/symbol-defs.svg#icon-instagram"
+                    ></use>
+                  </svg>
+                </a>
               </li>
-              <li>
-                <a href="tel:+380991111111" class="contacts-basment"
-                  >+38 099 111 11 11</a
-                >
+              <li class="connect-links-items">
+                <a href="insta.com" class="links-items">
+                  <svg class="svg-basement" width="20" height="20">
+                    <use
+                      href="./images/symbol-defs.svg#icon-twitter"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="connect-links-items">
+                <a href="insta.com" class="links-items">
+                  <svg class="svg-basement" width="20" height="20">
+                    <use
+                      href="./images/symbol-defs.svg#icon-facebook"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="connect-links-items">
+                <a href="insta.com" class="links-items">
+                  <svg class="svg-basement" width="20" height="20">
+                    <use
+                      href="./images/symbol-defs.svg#icon-linkedin"
+                    ></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="div-links">
-          <h2 class="connect-heading">присоединяйтесь</h2>
-          <ul class="connect-links">
-            <li class="connect-links-items">
-              <a href="insta.com" class="links-items">
-                <svg class="svg-basement" width="40" height="40">
-                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="connect-links-items">
-              <a href="insta.com" class="links-items">
-                <svg class="svg-basement" width="20" height="20">
-                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="connect-links-items">
-              <a href="insta.com" class="links-items">
-                <svg class="svg-basement" width="20" height="20">
-                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="connect-links-items">
-              <a href="insta.com" class="links-items">
-                <svg class="svg-basement" width="20" height="20">
-                  <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+                
+          </div>
+          <div class="subscribe">
+            
+          <p class="subscribep">Подпишитесь на рассылку</p>
+                <form name="signup_form" autocomplete="on" novalidate class="form">
+                  <label for="email" class="label"></label>
+                    <input type="email" name="email" class="emailinput" placeholder="E-mail"/>
+                    <button type="submit" class="subscribe-button">подписаться
+                      <svg class="subcribe-svg" width="24" height="24">
+                        <use
+                          href="./images/symbol-defs.svg#icon-telegram"
+                        ></use>
+                      </svg>
+                    </button>
+                  </form>
+                </div>
       </div>
+      
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal" > <p></p>
+      <button class="closemark" data-modal-close><svg class="svgclose" width="11" height="11">
+        <use
+          href="./images/symbol-defs.svg#icon-close"
+        ></use>
+      </svg></button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

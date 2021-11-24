@@ -469,18 +469,26 @@
                   </svg>
                 </a>
               </li>
-              <li>
-                <p>подпишись на рассылку</p>
-                <form name="signup_form" autocomplete="on" novalidate>
-                  <label>
-                    Email
-                    <input type="email" name="email" />
-                  </label>
-                  </form>
-              </li>
             </ul>
+                
           </div>
+          <div class="subscribe">
+            
+          <p class="subscribep">Подпишитесь на рассылку</p>
+                <form name="signup_form" autocomplete="on" novalidate class="form">
+                  <label for="email" class="label">
+                    <input type="email" name="email" class="emailinput" placeholder="E-mail"/></label>
+                    <button type="submit" class="subscribe-button">подписаться
+                      <svg class="subcribe-svg" width="24" height="24">
+                        <use
+                          href="./images/symbol-defs.svg#icon-telegram"
+                        ></use>
+                      </svg>
+                    </button>
+                  </form>
+                </div>
       </div>
+      
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal" > <p></p>
@@ -489,6 +497,32 @@
           href="./images/symbol-defs.svg#icon-close"
         ></use>
       </svg></button>
+      
+      <h2 class="modalContent">Оставьте свои данные, мы вам перезвоним</h2>        
+      <div class="modaldiv">
+        <div class="rows">
+      <label for="name" class="label">Имя
+        <form name="signup_form" autocomplete="on" novalidate class="form">
+          
+            <input type="name" name="name" class="inputmodal" placeholder=""/></label></div>
+            <div class="rows">
+            <label for="mobile" class="label">Телефон
+        <form name="signup_form" autocomplete="on" novalidate class="form">
+          
+            <input type="mobile" name="mobile" class="inputmodal" placeholder=""/></label></div>
+            <div class="rows">
+            <label for="email" class="label">Почта
+        <form name="signup_form" autocomplete="on" novalidate class="form">
+          
+            <input type="email" name="email" class="inputmodal" placeholder=""/></label></div>
+            <div class="rows">
+        <p>Комментарий</p>
+        <textarea name="feedback" rows="5" placeholder="Введите текст" class="feedback"></textarea></div>
+        <p class="accept">Соглашаюсь с рассылкой и принимаю Условия договора</p>
+        <button type="submit" class="button-send">отправить</button>
+      </form>
+
+      </div>
       </div>
     </div>
     <script src="./js/modal.js"></script>
