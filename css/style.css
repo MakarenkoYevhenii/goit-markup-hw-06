@@ -907,16 +907,12 @@ text-align: left;
   width: 200px;
   margin-left: 125px;
 }
-.input
-{
-  
-}
+
 .accept-div
 {
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
-  
 }
 .label,.labelcomments
 {
@@ -956,14 +952,30 @@ color: var(--colortextform);
 }
 .contract
 {
-  color:var(--bordermodal);
+
+  font-size: 14px;
+  line-height: 1.71px;
+  color: var(--bluecolor);
+letter-spacing: 0.03em;
+text-decoration-line: underline;
 }
 .inputmodal:hover,
 .inputmodal:focus,
 .feedback:hover, 
 .feedback:focus,
-.inputmodal:focus-visible 
+.inputmodal:focus-visible
 {
   outline: 0px;
   border-color: var(--bordermodal);
+}
+.contract--label
+{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+
+color: #757575;
 }
