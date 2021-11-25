@@ -472,18 +472,18 @@
                 
           </div>
           <div class="subscribe">
-            
+            <form name="signup_form" autocomplete="on" novalidate class="form">
           <p class="subscribep">Подпишитесь на рассылку</p>
-                <form name="signup_form" autocomplete="on" novalidate class="form">
-                  <label for="email" class="label">
-                    <input type="email" name="email" class="emailinput" placeholder="E-mail"/></label>
+                <div class="subscriber-emeil">
+                
+                    <input type="email" name="E-mail" class="emailinput" placeholder="email"/>
                     <button type="submit" class="subscribe-button">подписаться
                       <svg class="subcribe-svg" width="24" height="24">
                         <use
                           href="./images/symbol-defs.svg#icon-telegram"
                         ></use>
                       </svg>
-                    </button>
+                    </button></div>
                   </form>
                 </div>
       </div>
@@ -502,8 +502,8 @@
         <div class="rows">
       <label for="name" class="label">Имя
         <form name="signup_form" autocomplete="on" novalidate class="form">
-          
-            <input type="name" name="name" class="inputmodal" placeholder=""/></label>
+        </label>
+            <input type="name" name="name" class="inputmodal" placeholder=""/>
             <svg class="svg-modal" width="18" height="18">
               <use
                 href="./images/symbol-defs.svg#icon-login"
@@ -512,7 +512,6 @@
           </div>
             <div class="rows">
             <label for="mobile" class="label">Телефон
-        <form name="signup_form" autocomplete="on" novalidate class="form">
           
             <input type="mobile" name="mobile" class="inputmodal" placeholder=""/>
             <svg class="svg-modal" width="18" height="18">
@@ -522,7 +521,7 @@
             </svg></label></div>
             <div class="rows">
             <label for="email" class="label">Почта
-        <form name="signup_form" autocomplete="on" novalidate class="form">
+
           
             <input type="email" name="email" class="inputmodal" placeholder=""/>
             <svg class="svg-modal" width="18" height="18">
@@ -533,17 +532,21 @@
               <label for="feedback" class="labelcomments">Комментарий</label>
         <textarea name="feedback" rows="5" placeholder="Введите текст" class="feedback"></textarea></div>
         
-          <form>
+
         <div class="accept-div">    
-        <label class="contract--label">
-          <input type="checkbox" name="accept" value="" class="input"/>
-        
-        Соглашаюсь с рассылкой и принимаю <a href="dd" class="contract">Условия договора</a></label></form></div>
+        <label for="accept" class="contract--label">
+          <input type="checkbox" class="chekbox" name="accept" id="accept" value="yes" class="input"/>
+          <svg class="chekbox-accept" width="16" height="15">
+            <use
+              href="./images/symbol-defs.svg#icon-accept"
+            ></use>
+          </svg></label>
+        Соглашаюсь с рассылкой и принимаю  &nbsp;<a href="dd" class="contract">Условия договора</a></div>
      
         <button type="submit" class="button-send">Отправить</button>
       
       </form> 
-
+      
       </div>
       </div>
     </div>

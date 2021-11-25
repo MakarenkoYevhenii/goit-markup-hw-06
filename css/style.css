@@ -790,6 +790,11 @@ color: var(--whitetext);
   cursor: pointer;
   border: 1px solid var(--borderclose);
 }
+.closemark:hover,
+.closemark:focus
+{
+  fill: var(--bluecolor);
+}
 .subscribe-button
 {
   display:inline-flex;
@@ -833,6 +838,10 @@ margin-bottom: 20px;
 .subscribe
 {
   margin-left: 93px;
+}
+.subscriber-emeil
+{
+  display: flex;
 }
 .emailinput::placeholder
 {
@@ -924,6 +933,7 @@ text-align: left;
 .accept-div
 {
   display: flex;
+  align-items: center;
   justify-content: center;
   margin-bottom: 30px;
 }
@@ -989,6 +999,26 @@ font-weight: normal;
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
-
 color: var(--silvercolor);
+display: flex;
+margin-right: 8px;
+}
+.chekbox
+{
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+.chekbox-accept
+{
+  width: 16px;
+  height: 15px;
+  fill: white;
+  border: 2px solid black;
+  border-radius: 2px;
+}
+.chekbox:checked + .chekbox-accept
+{
+  background: var(--overlaybcg);
+  border: 0;
 }
