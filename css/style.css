@@ -862,6 +862,7 @@ text-align: left;
   border-radius: 4px;
   position: relative;
   padding-left: 40px;
+  transition: border-color var(--animation);
 }
 
 .feedback
@@ -931,6 +932,7 @@ color: var(--colortextform);
 .feedback
 {
   padding: 12px 16px;
+  transition: border-color var(--animation);
 }
 .labelcomments
 {
@@ -956,6 +958,5 @@ color: var(--colortextform);
 .contract
 {
   color:var(--bordermodal);
-
 }
 
