@@ -946,17 +946,24 @@ color: var(--colortextform);
   top:-30px;
   left:12px;
 }
-.inputmodal:hover,
-.inputmodal:focus,
-.feedback:hover, 
-.feedback:focus,
-.inputmodal:focus-visible
+.inputmodal:hover + .svg-modal,
+.inputmodal:focus + .svg-modal,
+.feedback:hover + .svg-modal, 
+.feedback:focus + .svg-modal,
+.inputmodal:focus-visible + .svg-modal 
 {
-  border-color: var(--bordermodal);
-  outline: 0px;
+  fill: var(--bordermodal);
 }
 .contract
 {
   color:var(--bordermodal);
 }
-
+.inputmodal:hover,
+.inputmodal:focus,
+.feedback:hover, 
+.feedback:focus,
+.inputmodal:focus-visible 
+{
+  outline: 0px;
+  border-color: var(--bordermodal);
+}
