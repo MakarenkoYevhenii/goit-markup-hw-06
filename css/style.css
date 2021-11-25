@@ -1021,19 +1021,19 @@ display: flex;
 }
 .chekbox-accept
 {
-  width: 16px;
-  height: 15px;
   fill: white;
+  
   border: 2px solid black;
   border-radius: 2px;
   cursor: pointer;
   margin-right: 5px;
-  transition: background var(--animation),border var(--animation);
+  transition: background var(--animation),border-color var(--animation);
 }
 .checkbox:checked + .chekbox-accept
 {
   background: var(--overlaybcg);
   border-color: var(--overlaybcg);
+  
 }
 .subcribe-svg
 {
