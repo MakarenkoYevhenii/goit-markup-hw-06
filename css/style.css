@@ -12,7 +12,7 @@
   --bckgrclteam: rgba(245, 244, 250, 1);
   --bckgrclteamitem: rgba(255, 255, 255, 1);
   --headerline: rgba(236, 236, 236, 1);
-  --socialitemhover: #2196f3;
+  --socialitemhover: rgb(33, 150, 243);
   --colorlogoitem: #fff;
   --bckglisteage: rgb(245, 244, 250);
   --bordedclients:rgba(175, 177, 184, 1);
@@ -30,7 +30,8 @@
   --bckgrmodal:rgba(0, 0, 0, 0.2);
   --bordermodal:rgb(33, 150, 243);
   --bcgcolorsend: rgb(24, 140, 232);
-  --colorplaceholder:rgba(117, 117, 117, 0.5);
+  --colorplaceholder:rgba(117, 117, 117, 0.502);
+  --hoverbutton:rgba(24, 140, 232, 1);
   /* shadowvolor */
   --shadow1:rgba(0, 0, 0, 0.1);
   --shadow2:rgba(0, 0, 0, 0.08);
@@ -765,7 +766,6 @@ color: var(--whitetext);
 }
 .modal
 {
-  height: 581px;
   width: 528px;
   background:  var(--colorofborderteam);
   position: absolute;
@@ -860,8 +860,7 @@ text-align: left;
 }
 .modaldiv
 {
-  margin-left: 40px;
-  margin-right: 40px; 
+  padding: 40px; 
 }
 .inputmodal
 {
@@ -927,7 +926,12 @@ text-align: left;
   margin-left: 125px;
   font-weight: bold;
   letter-spacing: 0.06em;
-  background-color: var(--bcgcolorsend);
+  background-color: var(--bordermodal);
+}
+.button-send:hover,
+.button-send:focus
+{
+  background-color: var(--hoverbutton)
 }
 
 .accept-div
@@ -991,7 +995,7 @@ text-decoration-line: underline;
   outline: 0px;
   border-color: var(--bordermodal);
 }
-.contract--label
+.contract--label,.text-contract
 {
 font-family: 'Roboto';
 font-style: normal;
@@ -1001,13 +1005,19 @@ line-height: 1.71;
 letter-spacing: 0.03em;
 color: var(--silvercolor);
 display: flex;
-margin-right: 8px;
 }
-.chekbox
+.checkbox
 {
-    position: absolute;
-    z-index: -1;
-    opacity: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 .chekbox-accept
 {
@@ -1016,9 +1026,16 @@ margin-right: 8px;
   fill: white;
   border: 2px solid black;
   border-radius: 2px;
+  cursor: pointer;
+  margin-right: 5px;
+  transition: background var(--animation),border var(--animation);
 }
-.chekbox:checked + .chekbox-accept
+.checkbox:checked + .chekbox-accept
 {
   background: var(--overlaybcg);
-  border: 0;
+  border-color: var(--overlaybcg);
+}
+.subcribe-svg
+{
+  margin-left: 10px;
 }
