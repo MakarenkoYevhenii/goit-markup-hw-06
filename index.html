@@ -428,8 +428,8 @@
         <form name="signup_form" autocomplete="on" novalidate class="form">
         <div class="rows">
           
-            <label for="name" class="label">Имя
-              <input type="text" class="inputmodal" placeholder="" name="username" />
+            <label for="username" class="label">Имя
+              <input type="text" class="inputmodal" placeholder="" name="username" id="username"/>
               <svg class="svg-modal" width="18" height="18">
                 <use href="./images/symbol-defs.svg#icon-login"></use>
               </svg>
@@ -465,8 +465,8 @@
               <use href="./images/symbol-defs.svg#icon-accept"></use>
             </svg>
           </label>
-          <label for="chekbox">
-          <p class="text-contract">Соглашаюсь с рассылкой и принимаю &nbsp;</p></label><a href="dd" class="contract">Условия договора</a>
+          
+          <p class="text-contract"><label for="chekbox" id="text-verification">Соглашаюсь с рассылкой и принимаю &nbsp;</label></p><a href="dd" class="contract">Условия договора</a>
         </div>
 
         <button type="submit" class="button-send">Отправить</button>
