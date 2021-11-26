@@ -423,14 +423,14 @@
       <button class="closemark" data-modal-close><svg class="svgclose" width="11" height="11">
           <use href="./images/symbol-defs.svg#icon-close"></use>
         </svg></button>
-
+        <div class="modaldiv">
       <h2 class="modalContent">Оставьте свои данные, мы вам перезвоним</h2>
-      <div class="modaldiv">
+      
         <form name="signup_form" autocomplete="on" novalidate class="form">
         <div class="rows">
           
             <label for="name" class="label">Имя
-              <input type="text" class="inputmodal" placeholder="" id="name" />
+              <input type="text" class="inputmodal" placeholder="" name="name" />
               <svg class="svg-modal" width="18" height="18">
                 <use href="./images/symbol-defs.svg#icon-login"></use>
               </svg>
@@ -441,7 +441,7 @@
         <div class="rows">
           <label for="mobile" class="label">Телефон
 
-            <input type="tel" class="inputmodal" placeholder="" id="mobile" />
+            <input type="tel" class="inputmodal" placeholder="" name="mobile" />
             <svg class="svg-modal" width="18" height="18">
               <use href="./images/symbol-defs.svg#icon-phone"></use>
             </svg></label>
@@ -450,7 +450,7 @@
           <label for="mail" class="label">Почта
 
 
-            <input type="email" class="inputmodal" placeholder="" id="mail" />
+            <input type="email" class="inputmodal" placeholder="" name="mail" />
             <svg class="svg-modal" width="18" height="18">
               <use href="./images/symbol-defs.svg#icon-email"></use>
             </svg></label>
@@ -462,13 +462,14 @@
 
 
         <div class="accept-div">
-          <input type="checkbox" class="checkbox" id="chekbox"/>
+          <input type="checkbox" class="checkbox" name="chekbox"/>
           <label for="chekbox" class="chekbox-accept contract--label">
             <svg  width="16" height="15">
               <use href="./images/symbol-defs.svg#icon-accept"></use>
             </svg>
           </label>
-          <p class="text-contract">Соглашаюсь с рассылкой и принимаю &nbsp;</p><a href="dd" class="contract">Условия договора</a>
+          <label for="chekbox">
+          <p class="text-contract">Соглашаюсь с рассылкой и принимаю &nbsp;</p></label><a href="dd" class="contract">Условия договора</a>
         </div>
 
         <button type="submit" class="button-send">Отправить</button>
