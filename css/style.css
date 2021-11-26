@@ -1021,7 +1021,6 @@ display: flex;
 .chekbox-accept
 {
   fill:var(--whitecolor);
-  
   border: 2px solid var(--maincolor);
   border-radius: 2px;
   cursor: pointer;
