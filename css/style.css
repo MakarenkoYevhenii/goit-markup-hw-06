@@ -1020,9 +1020,9 @@ display: flex;
 }
 .chekbox-accept
 {
-  fill: white;
+  fill:var(--whitecolor);
   
-  border: 2px solid black;
+  border: 2px solid var(--maincolor);
   border-radius: 2px;
   cursor: pointer;
   margin-right: 5px;
